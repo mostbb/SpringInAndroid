@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE beans [
+    <!ELEMENT bean EMPTY>
+    <!ATTLIST bean
+        id ID #REQUIRED
+        class CDATA #IMPLIED
+        >
+    <!ELEMENT constructor-arg EMPTY>
+    <!ATTLIST bean
+        name CDATA #IMPLIED
+        value CDATA #IMPLIED
+        >
+    <!ELEMENT component-scan EMPTY>
+    <!ATTLIST component-scan
+        base-package CDATA #IMPLIED
+        >
+    ]>
+<beans xmlns:context="http://schemas.android.com/apk/res/android">
+
+    <!-- 自动扫描组件用于扫描注解 -->
+    <context:component-scan base-package="com.example.samples.demo01"/>
+
+</beans>
